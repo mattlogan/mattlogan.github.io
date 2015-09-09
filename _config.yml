@@ -1,6 +1,6 @@
 # Site settings
 title: Matt Logan
-email: matt.b.logan@gmail.com.com
+email: matt.b.logan@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Matt Logan's Android development blog
 baseurl: "" # the subpath of your site, e.g. /blog/
