@@ -2,7 +2,6 @@
 layout: post
 title: "View as a Replacement for Fragment"
 date: 2014-09-23
-categories: android view fragment
 ---
 Reusability of user interface components in mobile app development is a nice goal, and can be achieved in a variety of ways. The most common approach involves the Fragment, while a less common (but still great) approach involves the simple View.
 

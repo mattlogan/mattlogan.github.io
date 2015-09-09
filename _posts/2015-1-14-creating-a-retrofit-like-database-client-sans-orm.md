@@ -2,7 +2,6 @@
 layout: post
 title: "Creating a Retrofit-like Database Client sans ORM"
 date: 2015-1-14
-categories: android architecture retrofit architecture
 ---
 [Retrofit](http://square.github.io/retrofit/) for Android allows us to define a REST client as an interface and create instances without having to provide an implementation. This is great because:
 

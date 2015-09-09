@@ -2,7 +2,6 @@
 layout: post
 title: "Replacing Otto with RxJava"
 date: 2015-7-16
-categories: android mvp architecture otto rxjava
 ---
 *programmers paradox: repeatedly taking the simplest option leads to greatest complexity* - @tabdulla
 

@@ -2,7 +2,6 @@
 layout: post
 title: "Decoupling the Presenter"
 date: 2014-10-27
-categories: android mvp model view presenter architecture fragment
 ---
 The model-view-presenter design pattern for Android apps, or MVP, allows us to write testable POJOs that we call presenters containing code that isn’t tied to the view. In this case, the "view" can be an Activity, a Fragment, or a View – anything responsible for setting the text on a TextView or setting a loading indicator’s visibility, for example. We can inject dependencies like an event bus, API client, or database manager into the presenter via its constructor or an alternative dependency injection technique like Dagger or Guice. These dependencies can be mocked in a test class with Mockito, and we can unit test the presenter until the cows come home.
 

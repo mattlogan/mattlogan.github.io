@@ -2,7 +2,6 @@
 layout: post
 title: "Unit Testing Non-Android Classes with Mock Objects"
 date: 2014-12-15
-categories: android mvp architecture testing
 ---
 The Android Framework provides a slew of classes for us to use in a multitude of ways: inheritance (Activity, Fragment, or Service), delegation (Handler, Looper, or LayoutInflater), or some combination (View, etc.). But for a good chunk of our app logic, we don't need any of this stuff. This is the logic we can best unit test, and mock objects go a long way to help with this.
 

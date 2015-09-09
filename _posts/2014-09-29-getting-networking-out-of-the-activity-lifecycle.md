@@ -2,7 +2,6 @@
 layout: post
 title: "Getting Networking Out of the Activity Lifecycle"
 date: 2014-09-29
-categories: android fragment networking rxjava otto bus rxjava
 ---
 When building a REST Client Android app, we often encounter issues as a result of trying to perform asynchronous operations from inside an Activity. Since we can't perform network requests on the UI thread, we must offload them to background threads, then repopulate the UI on the main thread with the result of our requests. This opens up the floodgates for memory leaks, duplicate requests, and ugly code. There will *always* be issues related to the Activity life cycle -- especially if we're doing all our requests inside of an Activity.
 

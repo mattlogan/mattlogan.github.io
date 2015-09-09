@@ -2,7 +2,6 @@
 layout: post
 title: "Android Can Have Delegates, Too"
 date: 2014-11-19
-categories: android delegate architecture
 ---
 The Cocoa framework for iOS makes heavy use of Delegates: objects that implement a Protocol and can be used to receive, return, or manipulate information.
 
