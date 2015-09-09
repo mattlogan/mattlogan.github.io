@@ -17,16 +17,16 @@ The alternative is to write your own implementation. The Android framework makes
 
 As an example, let's say we're creating a database client for saving and loading `Dog` objects. We can create a Retrofit-like interface:
 
-```
+{% highlight java %}
 public interface DogDatabaseClient {
     public void saveDogs(List<Dog> dogs);
     public void loadDogs(DogsCallback callback);
 }
-```
+{% endhighlight %}
 
 In the spirit of learning (and laziness), I'll leave the implementation details up to the reader, but it would look something like this:
 
-```
+{% highlight java %}
 public class SqlLiteDogDatabase implements DogDatabaseClient {
 
     // Our implementation of SqlLiteOpenHelper
@@ -45,16 +45,16 @@ public class SqlLiteDogDatabase implements DogDatabaseClient {
         callback.onDogsLoaded(dogList);
     }
 }
-```
+{% endhighlight %}
 
 Then, wherever an instance of `DogDatabaseClient` is required, we supply an instance of `SqlLiteDogDatabase`. With Dagger, for example, we'd have a `@Provides` method in our data `Module` like this:
 
-```
+{% highlight java %}
 @Provides @Singleton
 DogDatabaseClient provideDogDatabaseClient() {
     return new SqlLiteDogDatabase(new DatabaseHelper());
 }
-```
+{% endhighlight %}
 
 The result, if done correctly, is a database client interface that can be referenced from our application code without any direct coupling to the database client's implementation. The benefits of programming to an interface instead of an implementation are discussed heavily elsewhere, so I'll avoid that discussion here.
 
