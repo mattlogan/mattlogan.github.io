@@ -4,7 +4,7 @@ email: matt.b.logan@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Matt Logan's Android development blog
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://mattlogan.github.io" # the base hostname & protocol for your site
+url: "http://mattlogan.me" # the base hostname & protocol for your site
 twitter_username: _mattlogan
 github_username:  mattlogan
 permalink: none
