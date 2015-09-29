@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Making Pancakes: An Alternative to FragmentManager for Views"
+date: 2015-9-28
+---
 I recently wrote a small library called [Pancakes](https://github.com/mattlogan/pancakes). It's intended to be a replacement for FragmentManager for projects that use Views in place of Fragments. The motivation for not using Fragments is covered in depth in a [blog post](https://corner.squareup.com/2014/10/advocating-against-android-fragments.html) by Square, but it boils down to this: Fragments are overcomplicated, difficult to debug, and mostly unnecessary. Unless you're using Loaders, Fragments only to serve to a) manipulate Views and b) be managed by the FragmentManager to maintain a navigation stack. Manipulating Views can be done from Views themselves, a presenter, or really anything else.
 
 The goal for this library is to address the latter concern -- managing navigation of a View stack -- and the purpose of this blog post is to explain the decisions I made in designing and implementing this library.
